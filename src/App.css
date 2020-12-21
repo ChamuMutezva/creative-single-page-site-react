@@ -1,38 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  width: 100vw;
+}
+.navigation { 
+   position: absolute;
+  top: 80px;
+  left: 20%;
+  background: #191921;
+  width: 77%;  
+}
+/*hide navigation and menu toggling */
+.navHide{
+display: none;
+}
+/*show the navigation menu toggling */
+.navShow {
+  display: block;
+}
+.navList {
+  padding-top: 40px;
+}
+li {
+  list-style: none;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 24px
+ }
+ button {
+  width: 199px;
+  padding: 22.5px 0;
+  display: block;
+  margin: 0 auto 40px;
+  background-color: #f94f4f;
   color: white;
+  border: none;
+  font-size: 0.89rem;
+  font-weight: 800;
 }
 
-.App-link {
-  color: #61dafb;
+  a {
+    text-decoration: none;
+    line-height: 32px;
+    color: white;
+  }
+header {
+  position: relative;
+  display: flex;
+  width: 78.5%;
+  margin: 40px auto;
+  justify-content: space-between;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-toggle {
+  position: relative;
 }
+.closeMenu {
+  position: absolute;
+  left: -20px;
+  top: 0;
+ }
+
+
+ @media screen and (min-width: 768px) {
+  .navigation {
+       top: -40px;
+    left: 39%;    
+    width: 75%;
+    display: flex;
+    background-color: #f94f4f;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+.nav-toggle {
+  position: relative;
+  display: none;
+}
+
+.navList {
+  display: flex;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 34px;
+}
+.logo {
+  padding-top: 34px;
+  padding-bottom: 42px;
+}
+
+button {
+  width: 147px;
+  margin: auto;
+  background-color: #191919
+}
+
+ }
+
+/* header {
+  width: 100vw;
+  height: 178px;
+  display: flex;
+  flex-direction: row;
+ 
+}
+img {
+  display: block;
+  margin: auto 50px;
+}
+.logo, .navigation {
+  display: flex;
+  width: 50%;
+}
+button {
+  padding: 10px 33px;
+  display: inline-block;
+  margin: auto;
+  font-size: 1.3rem;
+}
+ul {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.navigation {  
+  background-color: #e86c6c;
+  font-size: 1.3rem;
+}
+*/
