@@ -1,0 +1,54 @@
+.secondary__img {
+    position: relative;
+    width: 100vw;
+   background-image: url("../../assets/mobile/image-strategic.jpg");  
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.secondary__img::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../assets/desktop/bg-pattern-wave-red.svg");
+    width: 131px;
+    height: 65px;
+    transform: scale(0.5);
+    background-repeat: no-repeat;
+    bottom: -31px;
+}
+.secondary__info__text {
+    padding-top: 56px;
+    padding-bottom: 96px;
+    width: 78.5%;
+    margin: auto;
+}
+.secondary__heading {
+    font-size: 1.78rem;
+    line-height: 40px;
+    text-align: left;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+.secondary__heading strong{
+    color: var(--red-text);
+}
+.secondary__btn {
+    position: relative;
+    text-align: left;
+    margin-left: 0;
+    color: var(--red-text);
+    background-color: inherit;
+}
+.secondary__btn::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    bottom: 5px;
+    background-color: #f94f4f;
+}
+.secondary__info {
+    background-color: var(--dark-bg);
+    color: var(--white-text);
+} 
+  

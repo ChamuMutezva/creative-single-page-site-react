@@ -1,0 +1,21 @@
+.promotional {
+    background-color: var(--red-bg);
+}
+.promotional__section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    width: 78.5%;
+    margin: auto;
+    color: var(--white-text);
+}
+.promotional__heading {
+    font-size: 1.9rem;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+.promotional__details {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 40px;
+}

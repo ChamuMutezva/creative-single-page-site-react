@@ -1,0 +1,20 @@
+import React from 'react'
+import './Primary.css'
+import '../../App.css'
+
+const Primary = () => {
+    return (
+        <div className="primary">
+            <div className="primary__details">
+                <h1 className="primary__heading">Branding & website design agency</h1>
+                <p className="primary__summary">We specialize in visual storytelling by
+                creating cohesive brand and website design solutions for small businesses,
+                giving lasting impressions to audiences in a digital world.
+            </p>
+                <button type="" className="primary__btn">Learn more</button>
+            </div>
+        </div>
+    )
+}
+
+export default Primary

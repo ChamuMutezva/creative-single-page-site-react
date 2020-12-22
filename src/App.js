@@ -1,5 +1,6 @@
 import Logo from './Header/Logo'
 import Nav from './Header/Nav'
+import Main from './Main/Mainpage'
 import MenuImg from './assets/mobile/icon-hamburger.svg'
 import CloseImg from './assets/mobile/icon-cross.svg'
 import { useState } from 'react'
@@ -9,20 +10,21 @@ function App() {
   const [toggleMenu, setToggleMenu] = useState(true)
 
   const changeToggleState = () => {
-    setToggleMenu(!toggleMenu)   
+    setToggleMenu(!toggleMenu)
   }
   return (
     <div className="App">
       <header>
         <Logo />
-        <Nav toggle={toggleMenu}/>
+        <Nav toggle={toggleMenu} />
         <div className="nav-toggle">
           <img src={MenuImg} alt="menu toggle"
-           className={`openMenu ${toggleMenu ? "navShow" : "navHide"}`} onClick={changeToggleState}/>
+            className={`openMenu ${toggleMenu ? "navShow" : "navHide"}`} onClick={changeToggleState} />
           <img src={CloseImg} alt="close toggle"
-           className={`closeMenu ${toggleMenu ? "navHide" : "navShow"}`} onClick={changeToggleState}/>
-        </div>
+            className={`closeMenu ${toggleMenu ? "navHide" : "navShow"}`} onClick={changeToggleState} />
+        </div>        
       </header>
+      <Main />
     </div>
   );
 }

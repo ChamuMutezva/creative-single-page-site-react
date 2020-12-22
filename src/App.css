@@ -3,14 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --red-text: #f94f4f;
+  --red-bg: #f94f4f;
+  --dark-bg: #191921;
+  --white-text: white;
+}
 .App {
   width: 100vw;
 }
 .navigation { 
    position: absolute;
-  top: 80px;
+  top: 73px;
   left: 20%;
-  background: #191921;
+  background: var(--dark-bg);
   width: 77%;  
 }
 /*hide navigation and menu toggling */
@@ -34,8 +40,8 @@ li {
   padding: 22.5px 0;
   display: block;
   margin: 0 auto 40px;
-  background-color: #f94f4f;
-  color: white;
+  background-color: var(--red-bg);
+  color: var(--white-text);
   border: none;
   font-size: 0.89rem;
   font-weight: 800;
@@ -44,7 +50,7 @@ li {
   a {
     text-decoration: none;
     line-height: 32px;
-    color: white;
+    color: var(--white-text);
   }
 header {
   position: relative;
@@ -62,7 +68,14 @@ header {
   left: -20px;
   top: 0;
  }
-
+ /* paragraph */
+ .primary__summary,
+ .secondary__summary {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+ 
 
  @media screen and (min-width: 768px) {
   .navigation {
@@ -70,7 +83,7 @@ header {
     left: 39%;    
     width: 75%;
     display: flex;
-    background-color: #f94f4f;
+    background-color: var(--red-bg);
     padding-top: 42px;
     padding-bottom: 42px;
 }
@@ -95,7 +108,7 @@ header {
 button {
   width: 147px;
   margin: auto;
-  background-color: #191919
+  background-color: var(--dark-bg);
 }
 
  }

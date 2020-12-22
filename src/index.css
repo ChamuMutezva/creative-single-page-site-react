@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: 'Commissioner', sans-serif;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
