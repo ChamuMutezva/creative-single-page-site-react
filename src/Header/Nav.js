@@ -2,9 +2,7 @@ import React from 'react'
 
 const Nav = (props) => {
 console.log(props.toggle)
-const toggleMenu = () => {
-   return props.toggle === true ? 'navigation' : 'navShow'
-}
+
     return (
         <div className={`navigation ${props.toggle ? "navShow" : "navHide"}`} >
             <ul className="navList">

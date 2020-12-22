@@ -1,9 +1,9 @@
 import React from 'react'
 import './Secondary.css'
 import '../../App.css'
-import SecondaryImgMobile from '../../assets/mobile/image-strategic.jpg'
-import SecondaryImgTablet from '../../assets/tablet/image-strategic.jpg'
-import SecondaryImgDesktop from '../../assets/desktop/image-strategic.jpg'
+// import SecondaryImgMobile from '../../assets/mobile/image-strategic.jpg'
+// import SecondaryImgTablet from '../../assets/tablet/image-strategic.jpg'
+// import SecondaryImgDesktop from '../../assets/desktop/image-strategic.jpg'
 
 const Secondary = () => {
 
