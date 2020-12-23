@@ -3,12 +3,21 @@ figure {
 }
 figcaption {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     right: 50px;
     color: white;
 }
+.ctrls {
+    padding: 0;
+    width: 96px;
+    margin: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
 .ctrls__btn {
-    width: auto;
+    width: 40px;
+    height: 40px;
     padding: 0;
     margin: auto;
     display: inline-block;
@@ -17,4 +26,27 @@ figcaption {
 .projects__ctrl {
     background-color: var(--dark-bg);
     color: var(--white-text);
+}
+.figure__title, .figure__subtitle {
+    font-size: 0.95rem;
+    line-height: 20px;
+} 
+.figure__title {
+    font-weight: 800;   
+}
+.figure__subtitle {    
+    font-weight: 400;  
+    text-align: right; 
+}
+.projects__ctrl_container {
+    width: 78.5%;
+    margin: auto;
+    padding-top: 81px;
+    padding-bottom: 75px;
+}
+.ctrls__title {
+    font-size: 2.13rem;
+    line-height: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
 }

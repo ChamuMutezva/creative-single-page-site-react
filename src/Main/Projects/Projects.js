@@ -24,19 +24,18 @@ const Projects = () => {
                     sizes="(min-width: 1220px) 60vw, (min-width: 680px) 50vw,  100vw"
                 />
                 <figcaption>
-                    <h5>Lean Product Roadmap </h5>
-                    <h6>2019 project</h6>
+                    <h5 className="figure__title">Lean Product Roadmap </h5>
+                    <h6 className="figure__subtitle">2019 project</h6>
                 </figcaption>
             </figure>
             <div className="projects__ctrl">
-                <h4>
-                    Brand naming & guidelines
-                </h4>
-                <div className="ctrls">
-                    <button className="ctrls__btn"><img src={IconPrevious} alt=""/></button>
-                    <button className="ctrls__btn"><img src={IconNext} alt=""/></button>
+                <div className="projects__ctrl_container">
+                    <h4 className="ctrls__title"> Brand naming & guidelines </h4>
+                    <div className="ctrls">
+                        <button className="ctrls__btn"><img src={IconPrevious} alt="" /></button>
+                        <button className="ctrls__btn"><img src={IconNext} alt="" /></button>
+                    </div>
                 </div>
-
             </div>
 
         </div>
