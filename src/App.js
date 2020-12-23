@@ -1,6 +1,7 @@
 import Logo from './Header/Logo'
 import Nav from './Header/Nav'
 import Main from './Main/Mainpage'
+import Footer from './Footer/Footer'
 import MenuImg from './assets/mobile/icon-hamburger.svg'
 import CloseImg from './assets/mobile/icon-cross.svg'
 import { useState } from 'react'
@@ -25,6 +26,7 @@ function App() {
         </div>        
       </header>
       <Main />
+      <Footer />
     </div>
   );
 }

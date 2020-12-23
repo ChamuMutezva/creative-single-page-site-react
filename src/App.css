@@ -8,6 +8,7 @@
   --red-bg: #f94f4f;
   --dark-bg: #191921;
   --white-text: white;
+  --white-bg: white;
 }
 .App {
   width: 100vw;
@@ -45,6 +46,12 @@ li {
   border: none;
   font-size: 0.89rem;
   font-weight: 800;
+  outline: none;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.001)
 }
 
   a {
