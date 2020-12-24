@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,16 +13,16 @@
 .App {
   width: 100vw;
 }
-.navigation { 
-   position: absolute;
+.navigation {
+  position: absolute;
   top: 73px;
   left: 20%;
   background: var(--dark-bg);
-  width: 77%;  
+  width: 77%;
 }
 /*hide navigation and menu toggling */
-.navHide{
-display: none;
+.navHide {
+  display: none;
 }
 /*show the navigation menu toggling */
 .navShow {
@@ -34,9 +34,9 @@ display: none;
 li {
   list-style: none;
   text-align: center;
-  margin-bottom: 24px
- }
- button {
+  margin-bottom: 24px;
+}
+button {
   width: 199px;
   padding: 22.5px 0;
   display: block;
@@ -49,75 +49,76 @@ li {
   outline: none;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
-  transform: scale(1.001)
+  transform: scale(1.001);
 }
 
-  a {
-    text-decoration: none;
-    line-height: 32px;
-    color: var(--white-text);
-  }
+a {
+  text-decoration: none;
+  line-height: 32px;
+  color: var(--white-text);
+}
 header {
   position: relative;
   display: flex;
   width: 78.5%;
   margin: 40px auto;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .nav-toggle {
+  display: flex;
   position: relative;
+  place-items: center;
 }
 .closeMenu {
   position: absolute;
   left: -20px;
   top: 0;
- }
- /* paragraph */
- .primary__summary, .secondary__summary {
+}
+/* paragraph */
+.primary__summary,
+.secondary__summary {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 25px;
 }
- 
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation {
-       top: -40px;
-    left: 39%;    
+    top: -40px;
+    left: 39%;
     width: 75%;
     display: flex;
     background-color: var(--red-bg);
     padding-top: 42px;
     padding-bottom: 42px;
-}
-.nav-toggle {
-  position: relative;
-  display: none;
-}
+  }
+  .nav-toggle {
+    position: relative;
+    display: none;
+  }
 
-.navList {
-  display: flex;
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding-top: 34px;
-}
-.logo {
-  padding-top: 34px;
-  padding-bottom: 42px;
-}
+  .navList {
+    display: flex;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 34px;
+  }
+  .logo {
+    padding-top: 34px;
+    padding-bottom: 42px;
+  }
 
-button {
-  width: 147px;
-  margin: auto;
-  background-color: var(--dark-bg);
+  button {
+    width: 147px;
+    margin: auto;
+    background-color: var(--dark-bg);
+  }
 }
-
- }
 
 /* header {
   width: 100vw;

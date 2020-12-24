@@ -23,8 +23,7 @@ import IconPrevious from '../../assets/desktop/icon-arrow-previous.svg'
 
 const Projects = () => {
     const [count, setCount] = useState(1)
-    console.log("Count before click is" , count)
-
+   
     //move forward to next image and heading
     const NextBtn = (e) => {       
         const titles = Array.from(document.querySelectorAll(".ctrls__title"))
@@ -38,32 +37,24 @@ const Projects = () => {
             slide.classList.add("slideHide")
         })
        
-        if (count === titles.length - 1) {
-            console.log("counting --", count)
+        if (count === titles.length - 1) {           
             setCount(0)
         } else {
-            setCount(count + 1)
-            console.log("counting -----", count)           
+            setCount(count + 1)                      
         }
-        console.log("Count after click is --- " , count)
-        titles.forEach((title, idx) => {
-            // console.log(idx, count)
+       
+        titles.forEach((title, idx) => {           
             if (idx === count) {
-                title.classList.add("titleShow")
-                console.log(title)
-            } else {
-                console.log(idx)
+                title.classList.add("titleShow")               
+            } else {               
                 title.classList.remove("titleShow")
             }
         })
 
-        imgSlides.forEach((slide, idx) => {
-            // console.log(idx, count)
+        imgSlides.forEach((slide, idx) => {           
             if (idx === count) {
-                slide.classList.add("slideShow")
-                console.log(slide)
-            } else {
-                console.log(idx)
+                slide.classList.add("slideShow")               
+            } else {                
                 slide.classList.remove("slideShow")
             }
         })
@@ -83,32 +74,25 @@ const Projects = () => {
              slide.classList.add("slideHide")
          })
         
-         if (count === 0) {
-             console.log("counting --", count)
+         if (count === 0) {            
              setCount(titles.length - 1)
          } else {
-             setCount(count - 1)
-             console.log("counting -----", count)           
+             setCount(count - 1)                    
          }
-         console.log("Count after click is --- " , count)
-         titles.forEach((title, idx) => {
-             // console.log(idx, count)
+        
+         titles.forEach((title, idx) => {             
              if (idx === count) {
-                 title.classList.add("titleShow")
-                 console.log(title)
+                 title.classList.add("titleShow")                
              } else {
                  console.log(idx)
                  title.classList.remove("titleShow")
              }
          })
  
-         imgSlides.forEach((slide, idx) => {
-             // console.log(idx, count)
+         imgSlides.forEach((slide, idx) => {            
              if (idx === count) {
-                 slide.classList.add("slideShow")
-                 console.log(slide)
-             } else {
-                 console.log(idx)
+                 slide.classList.add("slideShow")                
+             } else {                
                  slide.classList.remove("slideShow")
              }
          })

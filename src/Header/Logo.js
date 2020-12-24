@@ -5,7 +5,7 @@ import './HeaderStyle.css'
 const LogoDisplay = () => {
     return(
        <div className='logo'>
-           <img src={Logo} alt="creative design logo" />
+           <img src={Logo} alt="creative design logo" className="logoImg"/>
        </div>
     )
 }
