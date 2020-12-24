@@ -1,13 +1,24 @@
 .footer__container {
-    width: 78.5%;
-    margin: 89px auto 120px;
+  width: 78.5%;
+  margin: 89px auto 120px;
 }
 .footer__title {
-    font-size: 2.1rem;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 47px;
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 47px;
 }
 .footer__btn {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 680px) {
+  .footer__btn {
     margin-left: 0;
+    margin-top: 0;
+    background-color: var(--red-bg);
+  }
+  .footer__container {
+    display: flex;
+  }
 }

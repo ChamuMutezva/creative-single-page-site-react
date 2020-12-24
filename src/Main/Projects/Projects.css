@@ -1,70 +1,98 @@
 figure {
-    position: relative;
+  position: relative;
 }
 figcaption {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    color: white;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: white;
 }
 .ctrls {
-    gap: 20px;
-    padding: 0 40px 30px;
-    width: 96px;
-    margin: 0;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: flex-start;
+  gap: 20px;
+  padding: 0 40px 30px;
+  width: 96px;
+  margin: 0;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: flex-start;
 }
 .ctrls__btn {
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    background-color: inherit;   
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: inherit;
 }
 .projects__ctrl {
-    background-color: var(--dark-bg);
-    color: var(--white-text);
+  background-color: var(--dark-bg);
+  color: var(--white-text);
 }
-.figure__title, .figure__subtitle {
-    font-size: 0.95rem;
-    line-height: 20px;
-} 
+.figure__title,
+.figure__subtitle {
+  font-size: 0.95rem;
+  line-height: 20px;
+}
 .figure__title {
-    font-weight: 800;   
+  font-weight: 800;
 }
-.figure__subtitle {    
-    font-weight: 400;  
-    text-align: right; 
+.figure__subtitle {
+  font-weight: 400;
+  text-align: right;
 }
 .projects__ctrl_container {
-    width: 78.5%;
-    margin: auto;
-    padding-top: 81px;   
+  width: 78.5%;
+  margin: auto;
+  padding-top: 81px;
 }
 .ctrls__title {
-    font-size: 2.13rem;
-    line-height: 40px;
-    font-weight: 800;
-    margin-bottom: 24px;
+  font-size: 2.13rem;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
 }
-.projects__container , .titles{
-    position: relative;
+.projects__container,
+.titles {
+  position: relative;
 }
 /* these slides to sit with .slide 1 */
-.slide2, .slide3, .ctrls__title2, .ctrls__title3 {
-    visibility: hidden;
+.slide2,
+.slide3,
+.ctrls__title2,
+.ctrls__title3 {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.titleHide,
+.slideHide {
+  visibility: hidden;
+}
+
+.titleShow,
+.slideShow {
+  visibility: visible;
+}
+
+@media screen and (min-width: 680px) {
+  .projects {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .projects__ctrl {
+    position: relative;
+  }
+  .projects__ctrl::before {
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.titleHide, .slideHide {
-    visibility: hidden;
-}
-
-.titleShow, .slideShow {
-    visibility : visible;
+    content: "";
+    background-image: url("../../assets/desktop/bg-pattern-wavy-white.svg");
+    width: 131px;
+    background-repeat: no-repeat;
+    height: 65px;
+    right: -66px;
+    top: 21%;
+    transform: scale(0.5);
+  }
 }
