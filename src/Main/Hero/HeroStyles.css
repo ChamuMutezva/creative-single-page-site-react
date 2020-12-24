@@ -5,3 +5,12 @@
   width: 100%;
   height: 34.2vh;
 }
+
+@media screen and (min-width: 680px) {
+  .heroImg {
+    background-image: url("../../assets/tablet/image-hero.jpg");
+    background-size: 100% 100%;
+    width: 50%;
+    height: 90vh;
+  }
+}

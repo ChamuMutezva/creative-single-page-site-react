@@ -80,20 +80,23 @@ header {
 /* paragraph */
 .primary__summary,
 .secondary__summary {
-  font-size: 0.9rem;
+  font-size: 0.83rem;
   font-weight: 400;
   line-height: 25px;
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    margin: 40px auto 33px;
+  }
   .navigation {
     top: -40px;
     left: 39%;
     width: 75%;
     display: flex;
     background-color: var(--red-bg);
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
   .nav-toggle {
     position: relative;
@@ -118,6 +121,18 @@ header {
     margin: auto;
     background-color: var(--dark-bg);
   }
+
+  /* Hero and primary section */
+  .hero__primary {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .secondary {
+    display: flex;
+  }  
 }
 
 /* header {

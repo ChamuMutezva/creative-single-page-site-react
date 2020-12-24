@@ -8,8 +8,10 @@ import Projects from './Projects/Projects'
 const Main = () => {
     return (
         <>
-            <Hero />
-            <Primary />
+            <div className="hero__primary">
+                <Hero />
+                <Primary />
+            </div>
             <Secondary />
             <Promotional />
             <Projects />

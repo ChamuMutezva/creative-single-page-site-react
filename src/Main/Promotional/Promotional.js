@@ -5,7 +5,9 @@ const Promotional = () => {
     return (
         <div className="promotional">
             <div className="promotional__section">
-                <h3 className="promotional__heading">Our approach for creating a winning brand</h3>
+                <div className="promotional__heading__container">
+                    <h3 className="promotional__heading">Our approach for creating a winning brand</h3>
+                </div>
                 <div className="promotional__details">
                     <div className="promotional__all promotional__one">
                         <h4 className="promotional__title promotional__title__one">Brand strategy</h4>
