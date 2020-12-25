@@ -22,3 +22,23 @@
     display: flex;
   }
 }
+@media screen and (min-width: 1180px) {
+  .footer {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer::before {
+    position: absolute;
+    width: 136px;
+    left: -65px;
+    transform: scale(0.8);
+    background-repeat: no-repeat;
+    height: 60px;
+    content: "";
+    background-image: url("../assets/desktop/bg-pattern-wave-red.svg");
+  }
+  .footer__container {
+    justify-content: space-between;
+  }
+}

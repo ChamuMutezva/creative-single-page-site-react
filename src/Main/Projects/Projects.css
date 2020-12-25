@@ -81,7 +81,7 @@ figcaption {
 
 @media screen and (min-width: 612px) {
   .projects {
-    position: relative;    
+    position: relative;
     height: 100vh;
   }
   .projects__container {
@@ -104,5 +104,20 @@ figcaption {
     right: -66px;
     top: 21%;
     transform: scale(0.5);
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .projects__ctrl {
+    padding-top: 70px;
+    padding-left: 65px;
+  }
+  .ctrls__title h4 {
+    font-size: 3.11rem;
+    line-height: 64px;
+  }
+  .ctrls {
+    margin-left: 24px;
+    margin-top: 40px;
   }
 }

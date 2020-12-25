@@ -113,4 +113,12 @@
     line-height: 32px;
     width: 75%;
   }
+  .promotional__heading {
+    position: relative;
+    font-size: 3.1rem;
+    line-height: 64px;
+    margin-top: 200px;
+    margin-right: -120px;
+    z-index: 10;
+  }
 }
