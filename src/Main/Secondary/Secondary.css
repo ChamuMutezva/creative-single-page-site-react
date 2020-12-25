@@ -52,7 +52,7 @@
   color: var(--white-text);
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 612px) {
   .secondary__img::before {
     right: -65px;
     top: 130px;
@@ -71,5 +71,28 @@
   }
   .secondary__btn {
     margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .secondary__img {
+    width: 80vw;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url("../../assets/desktop/image-strategic.jpg");
+  }
+  .secondary__info__text {
+    padding-top: 178px;
+    width: 56.5%;
+  }
+  .secondary__heading {
+    font-size: 3.11rem;
+    line-height: 64px;
+  }
+  .secondary__summary {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+  .secondary__btn::before {
+    width: 80%;
   }
 }

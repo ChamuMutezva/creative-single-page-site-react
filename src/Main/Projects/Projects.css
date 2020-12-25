@@ -65,6 +65,9 @@ figcaption {
   top: 0;
   left: 0;
 }
+.slide img {
+  width: 100%;
+}
 
 .titleHide,
 .slideHide {
@@ -76,13 +79,20 @@ figcaption {
   visibility: visible;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 612px) {
   .projects {
-    display: flex;
-    flex-direction: row-reverse;
+    position: relative;    
+    height: 100vh;
+  }
+  .projects__container {
+    width: 59.3vw;
+    right: 0;
+    position: absolute;
   }
   .projects__ctrl {
     position: relative;
+    width: 45.7vw;
+    height: 60.1vh;
   }
   .projects__ctrl::before {
     position: absolute;

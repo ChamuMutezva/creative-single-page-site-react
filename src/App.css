@@ -85,7 +85,7 @@ header {
   line-height: 25px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 612px) {
   header {
     margin: 40px auto 33px;
   }
@@ -106,7 +106,6 @@ header {
   .navList {
     display: flex;
     width: 50%;
-    display: flex;
     align-items: flex-start;
     justify-content: space-around;
     padding-top: 34px;
@@ -132,44 +131,15 @@ header {
 
   .secondary {
     display: flex;
-  }  
+  }
 }
-
-/* header {
-  width: 100vw;
-  height: 178px;
-  display: flex;
-  flex-direction: row;
- 
+@media screen and (min-width: 1180px) {
+  .navigation {
+    left: 51%;
+    width: 62%;
+    justify-content: center;
+  }
+  button {
+    margin: auto 0;
+  }
 }
-img {
-  display: block;
-  margin: auto 50px;
-}
-.logo, .navigation {
-  display: flex;
-  width: 50%;
-}
-button {
-  padding: 10px 33px;
-  display: inline-block;
-  margin: auto;
-  font-size: 1.3rem;
-}
-ul {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.navigation {  
-  background-color: #e86c6c;
-  font-size: 1.3rem;
-}
-*/

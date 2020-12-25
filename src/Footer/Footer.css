@@ -1,6 +1,6 @@
 .footer__container {
   width: 78.5%;
-  margin: 89px auto 120px;
+  margin: 30px auto 30px;
 }
 .footer__title {
   font-size: 2.1rem;
@@ -12,7 +12,7 @@
   margin-left: 0;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 612px) {
   .footer__btn {
     margin-left: 0;
     margin-top: 0;
