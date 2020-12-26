@@ -82,7 +82,7 @@ figcaption {
 
 @media screen and (min-width: 780px) {
   .projects {
-   /* top: -80px; */
+    top: -80px; 
     position: relative;
      height: 80vh; 
   }

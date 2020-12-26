@@ -23,11 +23,11 @@ import IconPrevious from '../../assets/desktop/icon-arrow-previous.svg'
 
 const Projects = () => {
     const [count, setCount] = useState(1)
-   
+
     //move forward to next image and heading
-    const NextBtn = (e) => {       
+    const NextBtn = (e) => {
         const titles = Array.from(document.querySelectorAll(".ctrls__title"))
-       const imgSlides = Array.from(document.querySelectorAll(".slide"))
+        const imgSlides = Array.from(document.querySelectorAll(".slide"))
 
         titles.forEach(title => {
             title.classList.add("titleHide")
@@ -36,25 +36,25 @@ const Projects = () => {
         imgSlides.forEach(slide => {
             slide.classList.add("slideHide")
         })
-       
-        if (count === titles.length - 1) {           
+
+        if (count === titles.length - 1) {
             setCount(0)
         } else {
-            setCount(count + 1)                      
+            setCount(count + 1)
         }
-       
-        titles.forEach((title, idx) => {           
+
+        titles.forEach((title, idx) => {
             if (idx === count) {
-                title.classList.add("titleShow")               
-            } else {               
+                title.classList.add("titleShow")
+            } else {
                 title.classList.remove("titleShow")
             }
         })
 
-        imgSlides.forEach((slide, idx) => {           
+        imgSlides.forEach((slide, idx) => {
             if (idx === count) {
-                slide.classList.add("slideShow")               
-            } else {                
+                slide.classList.add("slideShow")
+            } else {
                 slide.classList.remove("slideShow")
             }
         })
@@ -65,38 +65,38 @@ const Projects = () => {
     const BackBtn = (e) => {
         const titles = Array.from(document.querySelectorAll(".ctrls__title"))
         const imgSlides = Array.from(document.querySelectorAll(".slide"))
- 
-         titles.forEach(title => {
-             title.classList.add("titleHide")
-         })
- 
-         imgSlides.forEach(slide => {
-             slide.classList.add("slideHide")
-         })
-        
-         if (count === 0) {            
-             setCount(titles.length - 1)
-         } else {
-             setCount(count - 1)                    
-         }
-        
-         titles.forEach((title, idx) => {             
-             if (idx === count) {
-                 title.classList.add("titleShow")                
-             } else {
-                 console.log(idx)
-                 title.classList.remove("titleShow")
-             }
-         })
- 
-         imgSlides.forEach((slide, idx) => {            
-             if (idx === count) {
-                 slide.classList.add("slideShow")                
-             } else {                
-                 slide.classList.remove("slideShow")
-             }
-         })
- 
+
+        titles.forEach(title => {
+            title.classList.add("titleHide")
+        })
+
+        imgSlides.forEach(slide => {
+            slide.classList.add("slideHide")
+        })
+
+        if (count === 0) {
+            setCount(titles.length - 1)
+        } else {
+            setCount(count - 1)
+        }
+
+        titles.forEach((title, idx) => {
+            if (idx === count) {
+                title.classList.add("titleShow")
+            } else {
+                console.log(idx)
+                title.classList.remove("titleShow")
+            }
+        })
+
+        imgSlides.forEach((slide, idx) => {
+            if (idx === count) {
+                slide.classList.add("slideShow")
+            } else {
+                slide.classList.remove("slideShow")
+            }
+        })
+
     }
     return (
         <div className="projects">
@@ -153,11 +153,11 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="ctrls">
-                    <label htmlFor="">
-                    <button className="ctrls__btn" onClick={BackBtn} tabIndex="0"><img src={IconPrevious} alt="" /></button>
+                    <label htmlFor="back">
+                        <button className="ctrls__btn" id="back" onClick={BackBtn} tabIndex="0"><img src={IconPrevious} alt="" /></button>
                     </label>
-                    <label htmlFor="">
-                    <button className="ctrls__btn" onClick={NextBtn} tabIndex="0"><img src={IconNext} alt="" /></button>
+                    <label htmlFor="next">
+                        <button className="ctrls__btn" id="next" onClick={NextBtn} tabIndex="0"><img src={IconNext} alt="" /></button>
                     </label>
                 </div>
             </div>
