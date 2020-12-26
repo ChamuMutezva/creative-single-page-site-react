@@ -53,7 +53,7 @@
   line-height: 25px;
 }
 
-@media screen and (min-width: 612px) {
+@media screen and (min-width: 780px) {
   .promotional__section {
     width: 100%;
     display: flex;
@@ -81,7 +81,7 @@
   }
   .promotional {
     background-color: transparent;
-    height: 100vh;
+  /*  height: 100vh; */
   }
   .promotional__all {
     width: 60%;

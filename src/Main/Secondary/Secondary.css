@@ -52,7 +52,7 @@
   color: var(--white-text);
 }
 
-@media screen and (min-width: 612px) {
+@media screen and (min-width: 780px) {
   .secondary__img::before {
     right: -65px;
     top: 130px;

@@ -76,13 +76,15 @@ figcaption {
 
 .titleShow,
 .slideShow {
-  visibility: visible;
+  visibility: visible;   
+  width: 100%;    
 }
 
-@media screen and (min-width: 612px) {
+@media screen and (min-width: 780px) {
   .projects {
+   /* top: -80px; */
     position: relative;
-    height: 100vh;
+     height: 80vh; 
   }
   .projects__container {
     width: 59.3vw;
@@ -108,6 +110,9 @@ figcaption {
 }
 
 @media screen and (min-width: 1180px) {
+  .projects {    
+      height: 100vh; 
+   }
   .projects__ctrl {
     padding-top: 70px;
     padding-left: 65px;

@@ -153,8 +153,12 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="ctrls">
-                    <button className="ctrls__btn" onClick={BackBtn}><img src={IconPrevious} alt="" /></button>
-                    <button className="ctrls__btn" onClick={NextBtn}><img src={IconNext} alt="" /></button>
+                    <label htmlFor="">
+                    <button className="ctrls__btn" onClick={BackBtn} tabIndex="0"><img src={IconPrevious} alt="" /></button>
+                    </label>
+                    <label htmlFor="">
+                    <button className="ctrls__btn" onClick={NextBtn} tabIndex="0"><img src={IconNext} alt="" /></button>
+                    </label>
                 </div>
             </div>
 

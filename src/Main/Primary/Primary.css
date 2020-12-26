@@ -18,7 +18,7 @@
   padding: 26px;
 }
 
-@media screen and (min-width: 612px) {
+@media screen and (min-width: 780px) {
   .primary {
     position: absolute;
     left: 0px;
@@ -44,13 +44,7 @@
   .primary__heading {
     font-size: 5.33rem;
     line-height: 88px;
-  }
-  .primary__summary {
-    font-size: 1rem;
-    width: 70%;
-    line-height: 32px;
-    margin-top: 39px;
-  }
+  } 
   .primary__btn {
     background-color: var(--red-bg);
   }

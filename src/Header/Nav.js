@@ -4,13 +4,13 @@ const Nav = (props) => {
     console.log(props.toggle)
 
     return (
-        <div className={`navigation ${props.toggle ? "navHide" : "navShow"}`} >
-            <ul className="navList">
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Products</a></li>
+        <div className={`navigation ${props.toggle ? "navHide" : "navShow"}`} tabIndex="0">
+            <ul className="navList" role="list">
+                <li tabIndex="0" role="listitem"><a href="">About</a></li>
+                <li tabIndex="0" role="listitem"><a href="">Services</a></li>
+                <li tabIndex="0" role="listitem"><a href="">Products</a></li>
             </ul>
-            <button type="button">Schedule a call</button>
+            <button type="button" tabIndex="0">Schedule a call</button>
         </div>
     )
 }
