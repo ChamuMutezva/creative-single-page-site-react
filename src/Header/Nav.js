@@ -1,7 +1,17 @@
 import React from 'react'
-
+import { useEffect } from 'react'
 const Nav = (props) => {
     console.log(props.toggle)
+    // when modal is on  set body overflowY to hidden
+    // remove hidden when modal is off
+    useEffect(() => {
+        if(!props.toggle) {
+            document.body.style.overflowY = 'hidden'
+        } 
+        return () => {
+            document.body.style.overflowY = 'unset'
+        }
+     } , [props.toggle])
 
     return (
         <div className={`navigation ${props.toggle ? "navHide" : "navShow"}`} tabIndex="0" role="navigation">
