@@ -101,7 +101,7 @@ const Projects = () => {
     return (
         <div className="projects">
             <div className="projects__container">
-                <div className="slide slide1" index={0}>
+                <div className="slide slide1">
                     <figure>
                         <img src={Slide1Mobile} alt=""
                             srcSet={`${Slide1Mobile} 375w,  ${Slide1Tablet} 438w, ${Slide1Desktop} 895w`}
@@ -113,7 +113,7 @@ const Projects = () => {
                         </figcaption>
                     </figure>
                 </div>
-                <div className="slide slide2" index={1}>
+                <div className="slide slide2">
                     <figure>
                         <img src={Slide2Mobile} alt=""
                             srcSet={`${Slide2Mobile} 375w,  ${Slide2Tablet} 438w, ${Slide2Desktop} 895w`}
@@ -125,7 +125,7 @@ const Projects = () => {
                         </figcaption>
                     </figure>
                 </div>
-                <div className="slide slide3" index={2}>
+                <div className="slide slide3">
                     <figure>
                         <img src={Slide3Mobile} alt=""
                             srcSet={`${Slide3Mobile} 375w,  ${Slide3Tablet} 438w, ${Slide3Desktop} 895w`}
@@ -141,23 +141,25 @@ const Projects = () => {
             <div className="projects__ctrl">
                 <div className="projects__ctrl_container">
                     <div className="titles">
-                        <div className="ctrls__title ctrls__title1" index={0}>
+                        <div className="ctrls__title ctrls__title1">
                             <h4> Brand naming & guidelines </h4>
                         </div>
-                        <div className="ctrls__title ctrls__title2" index={1}>
+                        <div className="ctrls__title ctrls__title2">
                             <h4 >Brand identity & merchandise</h4>
                         </div>
-                        <div className="ctrls__title ctrls__title3" index={2}>
+                        <div className="ctrls__title ctrls__title3">
                             <h4> Brand identity & web design</h4>
                         </div>
                     </div>
                 </div>
                 <div className="ctrls">
                     <label htmlFor="back">
-                        <button className="ctrls__btn" id="back" onClick={BackBtn} tabIndex="0"><img src={IconPrevious} alt="view previous image"  role="button" /></button>
+                        <button className="ctrls__btn" id="back" onClick={BackBtn} tabIndex="0"><img src={IconPrevious}
+                         alt="view previous image" aria-label="view previous image" /></button>
                     </label>
                     <label htmlFor="next">
-                        <button className="ctrls__btn" id="next" onClick={NextBtn} tabIndex="0"><img src={IconNext} alt="view next image" role="button" /></button>
+                        <button className="ctrls__btn" id="next" onClick={NextBtn} tabIndex="0"><img src={IconNext} 
+                        alt="view next image" aria-label="view previous image" /></button>
                     </label>
                 </div>
             </div>
