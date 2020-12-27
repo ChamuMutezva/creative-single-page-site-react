@@ -6,10 +6,12 @@ const Nav = (props) => {
     // remove hidden when modal is off
     useEffect(() => {
         if(!props.toggle) {
-            document.body.style.overflowY = 'hidden'
+           // document.body.style.overflowY = 'hidden'
+           document.body.classList.add("bodyCtrl");
         } 
         return () => {
-            document.body.style.overflowY = 'unset'
+           // document.body.style.overflowY = 'unset'
+           document.body.classList.remove("bodyCtrl");
         }
      } , [props.toggle])
 
