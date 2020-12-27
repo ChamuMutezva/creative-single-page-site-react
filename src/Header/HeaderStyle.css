@@ -1,4 +1,7 @@
 .logoImg {
-    display: block;
-    margin: 0;
+  display: block;
+  margin: 0;
+}
+.navigation button:hover {
+  opacity: 0.6;
 }

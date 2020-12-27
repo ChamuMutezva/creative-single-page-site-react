@@ -19,11 +19,14 @@
 }
 
 @media screen and (min-width: 780px) {
-  .primary__btn {    
+  .primary__btn {
     background-color: var(--red-bg);
-}
+  }
+  .primary__btn:hover {
+    color: #ff9393;
+  }
   .primary {
-   /* position: absolute;
+    /* position: absolute;
     left: 0px; */
     width: 51.5%;
   }
@@ -48,11 +51,8 @@
   .primary__heading {
     font-size: 5.33rem;
     line-height: 88px;
-  } 
-  .primary__btn {
-    background-color: var(--red-bg);
   }
   .primary__summary {
-    margin-top: 39px;   
+    margin-top: 39px;
   }
 }

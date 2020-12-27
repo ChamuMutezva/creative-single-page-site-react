@@ -58,6 +58,10 @@ a {
   text-decoration: none;
   line-height: 32px;
   color: var(--white-text);
+  opacity: 0.7;
+}
+a:hover {
+  opacity: 1;
 }
 header {
   position: relative;
@@ -131,6 +135,7 @@ header {
     position: relative;
     flex-wrap: nowrap;
   }
+  /* edge browser support - to force height to be 100vh */
   @supports (-ms-ime-align: auto) {
     .hero__primary {
       height: 100vh;
@@ -155,5 +160,13 @@ header {
     font-size: 1rem;
     width: 70%;
     line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1460px;
   }
 }

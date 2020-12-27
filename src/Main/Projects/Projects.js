@@ -154,10 +154,10 @@ const Projects = () => {
                 </div>
                 <div className="ctrls">
                     <label htmlFor="back">
-                        <button className="ctrls__btn" id="back" onClick={BackBtn} tabIndex="0"><img src={IconPrevious} alt="" /></button>
+                        <button className="ctrls__btn" id="back" onClick={BackBtn} tabIndex="0"><img src={IconPrevious} alt="view previous image"  role="button" /></button>
                     </label>
                     <label htmlFor="next">
-                        <button className="ctrls__btn" id="next" onClick={NextBtn} tabIndex="0"><img src={IconNext} alt="" /></button>
+                        <button className="ctrls__btn" id="next" onClick={NextBtn} tabIndex="0"><img src={IconNext} alt="view next image" role="button" /></button>
                     </label>
                 </div>
             </div>
