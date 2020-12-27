@@ -17,6 +17,8 @@
 
 @media screen and (min-width: 1180px) {
   .heroImg {
+    width: 70%;
+    height: 100vh;
     background-image: url("../../assets/desktop/image-hero.jpg");   
   }
 }

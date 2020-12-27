@@ -21,11 +21,14 @@
   .footer__container {
     display: flex;
   }
+  .footer__container {
+    margin: 0px auto 30px;
+  }
 }
 @media screen and (min-width: 1180px) {
   .footer {
     position: relative;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 60px;
   }
   .footer::before {
@@ -40,5 +43,6 @@
   }
   .footer__container {
     justify-content: space-between;
+    margin-top: 50px;
   }
 }

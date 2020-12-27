@@ -76,10 +76,10 @@ figcaption {
 
 .titleShow,
 .slideShow {
-  visibility: visible;   
-  width: 100%; 
+  visibility: visible;
+  width: 100%;
   animation-name: slideInRight;
-  animation-duration: 2s;   
+  animation-duration: 1s;
 }
 
 @keyframes slideInRight {
@@ -92,12 +92,9 @@ figcaption {
     transform: translate3d(0, 0, 0);
   }
 }
-
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 480px) {
   .projects {
-    top: -80px; 
-    position: relative;
-     height: 80vh; 
+       position: relative;    
   }
   .projects__container {
     width: 59.3vw;
@@ -109,6 +106,9 @@ figcaption {
     width: 45.7vw;
     height: 60.1vh;
   }
+  .ctrls {    
+    margin-top: 65px;    
+}
   .projects__ctrl::before {
     position: absolute;
     content: "";
@@ -122,10 +122,19 @@ figcaption {
   }
 }
 
+@media screen and (min-width: 780px) {
+  .projects {
+    top: -80px;   
+    height: 80vh;
+  }  
+  
+}
+
 @media screen and (min-width: 1180px) {
-  .projects {    
-      height: 100vh; 
-   }
+  .projects {
+    height: 100vh;
+    top: -57px;
+  }
   .projects__ctrl {
     padding-top: 70px;
     padding-left: 65px;

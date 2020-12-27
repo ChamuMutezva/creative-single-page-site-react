@@ -158,15 +158,21 @@ header {
   .primary__summary,
   .secondary__summary {
     font-size: 1rem;
-    width: 70%;
     line-height: 32px;
+  }
+  .secondary__summary {
+    width: 70%;
+  }
+  .primary__summary {
+    margin-top: 39px;
+    width: 83%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .wrapper {
     margin: 0 auto;
-    width: 95%;
-    max-width: 1460px;
+    width: 100%;
+    max-width: 1600px;
   }
 }

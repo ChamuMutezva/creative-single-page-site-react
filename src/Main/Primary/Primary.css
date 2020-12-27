@@ -49,10 +49,17 @@
     width: 88.6%;
   }
   .primary__heading {
-    font-size: 5.33rem;
-    line-height: 88px;
+    font-size: 3.33rem;
+    line-height: 55px;
   }
   .primary__summary {
     margin-top: 39px;
+    width: 83%;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .primary__heading {
+    font-size: 5.33rem;
+    line-height: 88px;
   }
 }

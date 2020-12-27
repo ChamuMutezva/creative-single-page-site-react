@@ -81,18 +81,23 @@
   }
   .promotional {
     background-color: transparent;
-  /*  height: 100vh; */
+    /*  height: 100vh; */
   }
   .promotional__all {
     width: 60%;
     margin: auto;
   }
 }
+@media screen and (min-width: 1080px) {
+  .promotional__details {
+   
+  }
+}
 @media screen and (min-width: 1180px) {
   .promotional__details {
-    top: -120px;
-    width: 56%;
-    padding-top: 200px;
+    top: -50px;
+    width: 56.5%;
+    padding-top: 50px;
     padding-bottom: 200px;
   }
   .promotional {
